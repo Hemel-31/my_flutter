@@ -8,6 +8,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Map data ={};
+
   @override
 
   Widget build(BuildContext context) {
