@@ -8,13 +8,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Map data = {};
+  Map data = {};
 
   @override
   Widget build(BuildContext context) {
-     final data = (ModalRoute.of(context)!.settings.arguments);
-     print(data);
-     
+    data = ModalRoute.of(context)!.settings.arguments as Map<dynamic, dynamic>;
+
+    print(data['loation']);
 
     return Scaffold(
       body: SafeArea(
