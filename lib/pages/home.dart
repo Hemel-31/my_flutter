@@ -8,11 +8,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  Map data ={};
+  // Map data = {};
 
   @override
-
   Widget build(BuildContext context) {
+     final data = (ModalRoute.of(context)!.settings.arguments);
+     print(data);
+     
+
     return Scaffold(
       body: SafeArea(
           child: Padding(
@@ -43,7 +46,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                     borderRadius: BorderRadius.circular(5.0))),
               ),
-             
             )
           ],
         ),

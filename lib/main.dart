@@ -8,7 +8,7 @@ import 'package:youtube_tut_tasting_4/pages/home.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/',
+    initialRoute: '/home',
     routes: {
       '/': (context) =>SplashScreen(),
       '/home': (context) => HomePage(), 

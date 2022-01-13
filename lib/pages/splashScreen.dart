@@ -18,9 +18,9 @@ void setupWorldTime() async{
   await bangladesh.getTime();
   print(bangladesh.time);
   Navigator.pushReplacementNamed(context, '/home', arguments: {
-    'location' : bangladesh.location,
-    'time':bangladesh.time,
-    'flag': bangladesh.flag,
+    "location" : bangladesh.location,
+    "time":bangladesh.time,
+    "flag": bangladesh.flag,
   });
 }
   
